@@ -8,14 +8,11 @@ const Card = ({loadingData, showData, weather, forecast}) => {
     var month = today.getMonth() + 1;
     var year = today.getFullYear();
     var date = day + '/' + month + '/' + year;
-
     var url = "";
     var iconUrl = "";
-
     var iconUrl3 = "";
     var iconUrl6 = "";
     var iconUrl9 = "";
-
     var forecastDate3 = "";
     var forecastDate6 = "";
     var forecastDate9 = "";
@@ -27,11 +24,9 @@ const Card = ({loadingData, showData, weather, forecast}) => {
     if(showData){
         url = "http://openweathermap.org/img/w/";
         iconUrl = url + weather.weather[0].icon + ".png";
-        
         iconUrl3 = url + forecast.list[1].weather[0].icon + ".png";
         iconUrl6 = url + forecast.list[2].weather[0].icon + ".png";
         iconUrl9 = url + forecast.list[3].weather[0].icon + ".png";
-
         forecastDate3 = forecast.list[1].dt_txt.substring(8, 10) + '/' + forecast.list[1].dt_txt.substring(5, 7) + '/' + forecast.list[1].dt_txt.substring(0, 4) + ' ' +  forecast.list[1].dt_txt.substring(11, 13);
         forecastDate6 = forecast.list[2].dt_txt.substring(8, 10) + '/' + forecast.list[2].dt_txt.substring(5, 7) + '/' + forecast.list[2].dt_txt.substring(0, 4) + ' ' +  forecast.list[2].dt_txt.substring(11, 13);
         forecastDate9 = forecast.list[3].dt_txt.substring(8, 10) + '/' + forecast.list[3].dt_txt.substring(5, 7) + '/' + forecast.list[3].dt_txt.substring(0, 4) + ' ' +  forecast.list[3].dt_txt.substring(11, 13);
@@ -92,7 +87,7 @@ const Card = ({loadingData, showData, weather, forecast}) => {
                     </div>
 
                 ):(
-                    <h2 className="text-light">Sin datos</h2>
+                    <h2 className="text-light">No haz puesto ningun dato crack</h2>
                 )
             }
 
