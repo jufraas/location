@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from './componentes/NavBar.js';
 import './assets/css/App.css'
-import Form from './componentes/Form.js';
+import WeatherPanel from './componentes/WeatherPanel.js';
 
 function App() {
     return(
         <div className='App'>
             <Navbar />
-            <Form />
+            <WeatherPanel />
+            
         </div>
     )
 };
