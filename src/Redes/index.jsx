@@ -2,9 +2,9 @@ import React from 'react'
 import '../assets/css/App.css'
 
 const Redes= () => {
-  return(<>
-    <div className='Redes-container'>
-        <div className='Redes'>
+  return(
+    <div className='redes-container'>
+        <div className='redes'>
             <a href="#">Instagram</a>
 
             <a href="#">Likedin</a>
@@ -14,7 +14,7 @@ const Redes= () => {
 
     </div>
   
-  </>)
+  )
 }
 
 export default Redes;
